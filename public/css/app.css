@@ -18,6 +18,14 @@ body {
     -moz-animation-duration: 1s;
     -o-animation-duration: 1s;
     animation-duration: 1s;
+
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-weight: 400;
 }
 
 .fixed-height-block {
@@ -101,7 +109,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
@@ -125,7 +133,7 @@ body {
 }
 
 .charts-number {
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 .why-we {
@@ -166,4 +174,229 @@ body {
 
 #feedback-form {
     margin-bottom: 40px;
+}
+
+#top-nav-bar .menu li {
+    display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+    #top-nav-bar .menu li {
+        display: block;
+        text-align: center;
+    }
+
+    #top-nav-bar.top-bar input {
+        margin: 0 auto 10px auto;
+    }
+}
+
+section.content {
+    /*height: 1000px;*/
+    background: #f2f2f2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bread-crumbs {
+    margin-top: 10px;
+}
+
+.course-parent-item {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    /*border-top: 1px solid rgba(0,0,0,0.2);*/
+    margin-top: 10px;
+}
+
+.course-parent-item:nth-child(even) {
+    background: #e6e6e6;
+}
+
+.side-bar-content {
+
+}
+
+.side-bar-content ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.side-bar-content ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 35px;
+}
+
+.side-bar-content ul li:before {
+    font-family: FontAwesome, sans-serif;
+    content: "\f0a4";
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    -webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -ms-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    transition: left 0.5s;
+}
+
+.side-bar-content ul li:hover::before {
+    animation: horizontal_979 0.72s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+.horizontal {
+    animation: horizontal_979 0.72s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes horizontal_979 {
+    0% {
+        transform: translate(0, 0)
+    }
+    50% {
+        transform: translate(5px, 0)
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.main-content {
+    padding-bottom: 40px;
+}
+
+.course-item {
+    margin-bottom: 40px;
+}
+
+.course-item img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.course-item p {
+    height: 50px;
+    overflow: hidden;
+}
+
+.category-info {
+
+}
+
+.category-info .column:last-child {
+    float: left;
+}
+
+.preview {
+    position: relative;
+}
+
+.cost {
+    position: absolute;
+    right: -20px;
+    top: 15px;
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transform: rotate(40deg);
+    width: 115px;
+}
+
+.cost.green {
+    background: green;
+    color: #ffffff;
+}
+
+.cost.red {
+    background: #e11633;
+    color: #ffffff;
+}
+
+.play-list {
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.playlist-item {
+    margin-top: 10px;
+}
+
+.playlist-item.active {
+    /*background: #e6e6e6;*/
+}
+
+.video-title {
+    margin-top: 10px;
+}
+
+/*.video-title p {*/
+    /*font-size: 2rem;*/
+/*}*/
+
+.video-info-actions {
+    margin-top: 30px;
+}
+
+.video-info-actions .column:last-child {
+    float: left;
+}
+
+.video-description {
+    margin-top: 20px;
+}
+
+.comments {
+    margin-top: 40px;
+}
+
+.comments h3 {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.comments-wrapper {
+    margin-top: 30px;
+}
+
+.comment-item {
+    margin-bottom: 40px;
+}
+
+.comment-item .replies {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section.code {
+    background: #3b3b3b;
+    color: #ffffff;
+    border: 1px solid #3a3a3a;
+    padding-left: 10px;
+}
+
+.comment-option {
+    margin-top: 10px;
+}
+
+.comment-likes {
+    width: 20px;
+}
+
+.comment-likes .fa {
+    cursor: pointer;
+}
+
+.comment-likes span {
+    color: #22bb5b;
+}
+
+.user-info p {
+    /*font-size: 0.4rem;*/
+}
+
+.comment {
+    min-height: 200px;
 }
