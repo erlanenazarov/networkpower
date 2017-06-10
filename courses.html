@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная | Network Power</title>
+    <title>Категории курса | Network Power</title>
     <link rel="stylesheet" type="text/css" href="public/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="public/css/app.css">
     <link rel="stylesheet" type="text/css" href="public/css/font-awesome.min.css">
@@ -34,10 +34,10 @@
                         <li><a href="courses-inside.html">SASS/LESS</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Готовые движки</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Клиентам</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="complete-engines.html">Готовые движки</a></li>
+                <!--<li><a href="#">О нас</a></li>-->
+                <!--<li><a href="#">Форум</a></li>-->
             </ul>
         </div>
         <div class="top-bar-right">
@@ -46,6 +46,12 @@
                 <li>
                     <button type="button" class="button">Поиск</button>
                 </li>
+                <li><a href="#" data-open="auth-modal"><i class="fa fa-sign-in"></i> Вход | <i class="fa fa-user-plus"></i>Регистрация</a></li>
+                <!--<li role="menuitem">-->
+                    <!--<p class="no-margin">-->
+                        <!--<a href="#"><i class="fa fa-user-circle-o"></i> Erlan</a> | <a href="#"><i class="fa fa-sign-out"></i> Выйти</a>-->
+                    <!--</p>-->
+                <!--</li>-->
             </ul>
         </div>
     </div>
@@ -288,6 +294,63 @@
         </div>
     </div>
 </footer>
+
+
+<div class="reveal small" data-reveal data-close-on-click="true" data-animation-in="scale-in-down" data-animation-out="scale-out-down" id="auth-modal">
+    <h2>Авторизация</h2>
+    <hr>
+    <div class="row columns">
+        <div class="large-6 column text-center login-form-wrapper">
+            <ul>
+                <li><a href="#" class="button expanded subscribe-button facebook"><i class="fa fa-facebook-square"></i> Войти через Facebook</a></li>
+                <li><a href="#" class="button expanded subscribe-button vk"><i class="fa fa-vk"></i> Войти через Вконтакте</a></li>
+                <li><a href="#" class="button expanded subscribe-button github"><i class="fa fa-github-square"></i> Войти через GitHub</a></li>
+            </ul>
+            <p><i class="fa fa-dot-circle-o"></i> ИЛИ <i class="fa fa-dot-circle-o"></i></p>
+            <form method="POST" id="login-form">
+                <div class="row columns">
+                    <input type="email" placeholder="E-Mail" name="password">
+                </div>
+                <div class="row columns">
+                    <input type="password" placeholder="Пароль" name="password">
+                </div>
+                <div class="row text-center columns">
+                    <button type="submit" class="button expanded subscribe-button"><i class="fa fa-sign-in"></i> Войти</button>
+                </div>
+            </form>
+        </div>
+        <div class="large-6 column">
+            <p class="text-center">Зарегистрируйтесь у нас!<br>Давай, это очень просто!</p>
+            <form method="POST" id="register-form">
+                <div class="row columns">
+                    <input type="email" placeholder="E-Mail" name="password">
+                </div>
+                <div class="row columns">
+                    <input type="password" placeholder="Пароль" name="password">
+                </div>
+                <div class="row columns">
+                    <input type="password" placeholder="Повторите пароль" name="re_password">
+                </div>
+                <div class="row columns">
+                    <label>
+                        <select name="gender">
+                            <option value>Выберите пол</option>
+                            <option value="male">Мужской</option>
+                            <option value="female">Женский</option>
+                        </select>
+                    </label>
+                    <p class="help-text">В дальнейшем вы можете изменить эту информацию</p>
+                </div>
+                <div class="row text-center columns">
+                    <button type="submit" class="button expanded subscribe-button"><i class="fa fa-user-plus"></i> Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
 
 <script src="public/js/vendor/jquery.js"></script>
 <script src="public/js/vendor/what-input.js"></script>

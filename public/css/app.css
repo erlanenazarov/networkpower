@@ -295,14 +295,14 @@ section.content {
 
 .cost {
     position: absolute;
-    right: -20px;
-    top: 15px;
+    right: -25px;
+    top: 25px;
     -webkit-transform: rotate(40deg);
     -moz-transform: rotate(40deg);
     -ms-transform: rotate(40deg);
     -o-transform: rotate(40deg);
     transform: rotate(40deg);
-    width: 115px;
+    width: 144px;
 }
 
 .cost.green {
@@ -399,4 +399,136 @@ section.code {
 
 .comment {
     min-height: 200px;
+}
+
+.one-post-item {
+    padding: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.one-post-item:nth-child(odd) {
+    background: #e6e6e6;
+}
+
+.post-short-description {
+    height: 45px;
+    overflow: hidden;
+}
+
+.like-button {
+    cursor: pointer;
+}
+
+.no-float .column:last-child {
+    float: left !important;
+}
+
+ul.profile-info {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+ul.profile-info li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+.course-item .preview {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-item .preview img {
+    max-width: 100%;
+}
+
+.complete-engine-wrapper .slider-wrapper {
+    width: 850px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.complete-engine-wrapper .slick-dots {
+    bottom: 35px;
+}
+
+.about, .history {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.history {
+    background: #3b3b3b;
+}
+
+.login-form-wrapper {
+    border-right: 1px solid #3b3b3b;
+}
+
+.login-form-wrapper ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.login-form-wrapper ul li {
+    list-style-type: none;
+}
+
+a.facebook {
+    background: #5181b7;
+    color: #ffffff;
+    border: 1px solid #5181b7;
+}
+
+a.facebook:hover {
+    background: transparent;
+    color: #5181b7;
+}
+
+a.vk {
+    background: #1779ba;
+    color: #ffffff;
+    border: 1px solid #1779ba;
+}
+
+a.vk:hover {
+    background: transparent;
+    color: #1779ba;
+}
+
+a.github {
+    background: #24292e;
+    color: #ffffff;
+    border: 1px solid #24292e;
+}
+
+a.github:hover {
+    background: transparent;
+    color: #24292e;
+}
+
+.image-wrapper {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-new-picture {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #3b3b3b;
+    text-align: center;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    padding-top: 2px;
+    background: #ffffff;
 }

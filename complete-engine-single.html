@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Один курс | Network Power</title>
+    <title>Готовые движки | Network Power</title>
     <link rel="stylesheet" type="text/css" href="public/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="public/css/app.css">
     <link rel="stylesheet" type="text/css" href="public/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="public/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="public/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="public/slick/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -57,50 +59,89 @@
     </div>
 </header>
 
-
 <section class="row columns content">
     <div class="bread-crumbs">
         <nav aria-label="You are here:" role="navigation">
             <ul class="breadcrumbs">
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="courses.html">Курсы</a></li>
-                <li><a href="courses-inside.html">[Python/Django]</a></li>
-                <li><a href="course-single.html">Интернет магазин</a></li>
+                <li><a href="complete-engines.html">Готовые движки</a></li>
+                <li><a href="complete-engine-single.html">Доска объявлений</a></li>
             </ul>
         </nav>
     </div>
 
     <div class="page-title">
-        <h1>Интернет магазин</h1>
+        <h1>Доска объявлений</h1>
         <hr>
     </div>
 
-    <div class="row columns video-player-wrapper">
-        <div class="large-9 medium-9 small-9 column current-video">
-            <img src="http://placehold.it/850x450">
+
+    <div class="row columns complete-engine-wrapper">
+        <div class="large-9 column slider-wrapper" id="slider">
+            <div>
+                <img src="public/images/complete_engines/classified_ad.png">
+            </div>
+            <div>
+                <img src="public/images/complete_engines/classified_ad.png">
+            </div>
+            <div>
+                <img src="public/images/complete_engines/classified_ad.png">
+            </div>
+            <div>
+                <img src="public/images/complete_engines/classified_ad.png">
+            </div>
+            <div>
+                <img src="public/images/complete_engines/classified_ad.png">
+            </div>
         </div>
-        <div class="large-3 medium-3 small-3 column play-list">
-            <div class="playlist-item">
-                <p>[1] Типы данных <i class="fa fa-check"></i></p>
-                <span><img src="http://placehold.it/260x150"/></span>
-            </div>
-            <div class="playlist-item">
-                <p>[2] Циклы</p>
-                <span><img src="http://placehold.it/260x150"/></span>
-            </div>
-            <div class="playlist-item">
-                <p>[3] Массивы</p>
-                <span><img src="http://placehold.it/260x150"/></span>
-            </div>
-            <div class="playlist-item">
-                <p>[4] Объекты</p>
-                <span><img src="http://placehold.it/260x150"/></span>
+        <div class="large-3 column">
+            <h3>Детали:</h3>
+            <ul class="profile-info">
+                <li><span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover="false" tabindex="1" title="Цена"><i class="fa fa-money"></i> 500<i class="fa fa-dollar"></i></span></li>
+                <li><span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover="false" tabindex="1" title="Back-end"><i class="fa fa-code"></i> [Python/Django]</span></li>
+                <li><span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover="false" tabindex="1" title="Front-end"><i class="fa fa-font"></i> Pure HTML5/CSS3 + Jquery</span></li>
+                <li><span data-tooltip aria-haspopup="true" class="has-tip left" data-disable-hover="false" tabindex="1" title="Сервер"><i class="fa fa-server"></i> Ubuntu 14.04 + Apache2</span></li>
+            </ul>
+            <div class="complete-engine-feedback">
+                <form>
+                    <div class="row">
+                        <input type="text" id="name" placeholder="Имя">
+                    </div>
+                    <div class="row">
+                        <input type="email" id="email" placeholder="E-Mail">
+                    </div>
+                    <div class="row text-center">
+                        <button type="submit" class="button">Отправить</button>
+                        <p class="help-text">Свяжитесь с нами если хотиту купить...</p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+
     <div class="columns video-options">
         <div class="large-9 column medium-9 small-9 video-title">
-            <h2>[1] Типы данных</h2>
+            <p>
+                Представляем вам движок для Сайта доски объявлений! <br>
+                Адрес: <a href="http://www.tumar24.ru" target="_blank">www.tumar24.ru</a>
+            </p>
+            <span>Функционал сайта</span>
+            <ul>
+                <li>Авторизация настроена на уникальную почту</li>
+                <li>Авторизация через соц. сети</li>
+                <li>
+                    Добавление объявлений с фронта
+                    <ul>
+                        <li>Есть возможность загружать сразу несколько картинок</li>
+                        <li>Есть возможность выбрать метку на карте</li>
+                        <li>При добавлении администратору отправляется на почту письмо о том, что пользователь добавил новое объявление</li>
+                    </ul>
+                </li>
+                <li>Продажа баннерных мест</li>
+                <li>Просмотры каждого объявления</li>
+                <li>Двух уровневые категории</li>
+                <li>СЕО оптимизация</li>
+            </ul>
         </div>
         <div class="large-3 column video-info-actions">
             <div class="small-4 column">
@@ -111,17 +152,6 @@
             </div>
             <div class="small-4 column">
                 <span style="cursor: pointer;"><i class="fa fa-heart-o"></i> 43</span>
-            </div>
-        </div>
-    </div>
-    <div class="large-9">
-        <div class="row columns video-description">
-            <div class="large-9 column">
-                <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor
-                    sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet </p>
-            </div>
-            <div class="large-3 column">
-                <i class="fa fa-paperclip"></i> <a href="#">[1]introduction.rar</a>
             </div>
         </div>
     </div>
@@ -273,8 +303,8 @@
             </div>
         </div>
     </div>
-</section>
 
+</section>
 
 <footer class="responsive-blog-footer">
     <div class="row">
@@ -317,7 +347,6 @@
         </div>
     </div>
 </footer>
-
 
 <div class="reveal small" data-reveal data-close-on-click="true" data-animation-in="scale-in-down" data-animation-out="scale-out-down" id="auth-modal">
     <h2>Авторизация</h2>
@@ -380,5 +409,16 @@
 <script src="public/js/vendor/foundation.js"></script>
 <script src="public/js/vendor/wow.js"></script>
 <script src="public/js/app.js"></script>
+<script src="public/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#slider').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            autoplay: true
+        });
+    });
+</script>
 </body>
 </html>
