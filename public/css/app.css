@@ -550,3 +550,22 @@ span.count {
 div.profile-info {
     padding-bottom: 40px;
 }
+
+label {
+    cursor: pointer;
+}
+
+/*2.4375rem*/
+
+.select2-selection.select2-selection--multiple {
+    height: 2.4375rem;
+    position: relative;
+}
+
+.select2-selection.select2-selection--multiple > ul {
+    height: 100%;
+}
+
+.select2-selection.select2-selection--multiple .select2-selection__rendered {
+    margin-top: 5px;
+}
