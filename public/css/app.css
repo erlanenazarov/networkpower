@@ -532,3 +532,21 @@ a.github:hover {
     padding-top: 2px;
     background: #ffffff;
 }
+
+.profile-stat {
+    margin-bottom: 25px;
+}
+
+span.count {
+    background: #1779ba;
+    color: #ffffff;
+    border: 1px solid #1779ba;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    border-radius: 60%;
+    padding: 0.3rem;
+}
+
+div.profile-info {
+    padding-bottom: 40px;
+}
